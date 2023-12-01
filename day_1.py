@@ -1,4 +1,5 @@
 from utils import utils
+from log import *
 
 '''
 https://adventofcode.com/2023/day/1
@@ -76,7 +77,7 @@ def part_2():
         for line in f.readlines():
             line = line.replace('\n', '')
 
-            print(f"Line:\t{line}")
+            log_debug(f"Line:\t{line}")
 
             # keep track of occurrences of each number by tracking which indices it shows up at
             occurrences = {}
@@ -106,7 +107,7 @@ def part_2():
                         max_index_value = value
 
             output = int(f'{min_index_value}{max_index_value}')
-            print(f"Output:\t{output}")
+            log_debug(f"Output:\t{output}")
 
             numbers.append(output)
     
