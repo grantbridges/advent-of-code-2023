@@ -11,6 +11,9 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
 '''
 
+# Set this value to control which solution to run
+run_solution_day = 1
+
 # { Day Number: [ Part 1 Solution Method, Part 2 Solution Method ] }
 solutions = {
     1: [day_1.part_1, day_1.part_2],
@@ -61,4 +64,4 @@ def run_solution(day):
         
         log_info(f"-- Pt. {part+1}: {solution} ({elapsed_time:.5f}ms)")
 
-run_solution(day = 1)
+run_solution(day = run_solution_day)
