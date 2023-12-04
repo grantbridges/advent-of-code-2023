@@ -7,8 +7,7 @@ class BaseAoCDaySolutions:
     def __init__(self, day_number):
         self.day_number = day_number
 
-        self.input_file_part_1 = 'inputs/day_xxx_1.txt'
-        self.input_file_part_2 = 'inputs/day_xxx_2.txt'
+        self.input_file = f'inputs/day_{self.day_number}.txt'
 
     def part_1(self):
         return -1

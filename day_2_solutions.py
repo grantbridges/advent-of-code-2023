@@ -99,12 +99,9 @@ class Day2Solutions(BaseAoCDaySolutions):
     def __init__(self):
         BaseAoCDaySolutions.__init__(self, 2)
 
-        self.input_file_part_1 = 'inputs/day_2.txt'
-        self.input_file_part_2 = 'inputs/day_2.txt'
-
     def part_1(self):
         games = []
-        with open(self.input_file_part_1, 'r') as f:
+        with open(self.input_file, 'r') as f:
             for line in f.readlines():
                 line = line.replace('\n', '')
 
@@ -126,7 +123,7 @@ class Day2Solutions(BaseAoCDaySolutions):
 
     def part_2(self):
         games = []
-        with open(self.input_file_part_1, 'r') as f:
+        with open(self.input_file, 'r') as f:
             for line in f.readlines():
                 line = line.replace('\n', '')
 

@@ -6,12 +6,9 @@ class Day1Solutions(BaseAoCDaySolutions):
     def __init__(self):
         BaseAoCDaySolutions.__init__(self, 1)
 
-        self.input_file_part_1 = 'inputs/day_1.txt'
-        self.input_file_part_2 = 'inputs/day_1.txt'
-
     def part_1(self):
         numbers = []
-        with open(self.input_file_part_1, 'r') as f:
+        with open(self.input_file, 'r') as f:
             for line in f.readlines():
                 first_val = utils.first_int_in_list(line)
                 last_val = utils.last_int_in_list(line)
@@ -34,7 +31,7 @@ class Day1Solutions(BaseAoCDaySolutions):
         }
 
         numbers = []
-        with open(self.input_file_part_2, 'r') as f:
+        with open(self.input_file, 'r') as f:
             for line in f.readlines():
                 line = line.replace('\n', '')
 
