@@ -1,3 +1,5 @@
+import re
+
 class utils:
     def __init__(self):
         pass
@@ -34,3 +36,9 @@ class utils:
             indices.append(i)
             i = original_string.find(substring, i+1)
         return indices
+    
+    @staticmethod
+    def remove_multi_whitespace(original_string):
+        # Replaces all multiple occurrences of whitespace with single
+        # E.g. "Test    4   3   2 1 " becomes "Test 4 3 2 1"
+        return re.sub(r'\s+', ' ', original_string)
